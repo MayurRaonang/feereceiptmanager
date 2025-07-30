@@ -1,3 +1,3 @@
-const BASE_URL = "https://fee-receipt-generator.onrender.com";
+const BASE_URL = "https://feereceiptmanager.vercel.app/";
 
 export default BASE_URL;

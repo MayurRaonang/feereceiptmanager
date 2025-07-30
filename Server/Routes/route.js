@@ -52,7 +52,7 @@ router.post("/register", async (req, res) => {
           <li>Username: ${username}</li>
           <li>Email: ${email}</li>
         </ul>
-        <p><a href="http://localhost:5000/approve?username=${username}">Click here to approve</a></p>
+        <p><a href="https://feereceiptmanager.vercel.app/approve?username=${username}">Click here to approve</a></p>
       `
     });
 
@@ -87,7 +87,7 @@ router.get("/approve", async (req, res) => {
 
     // Send verification email
     const token = jwt.sign({ email: newUser.email }, verificationSecret, { expiresIn: "1h" });
-    const verificationLink = `https://localhost:5000/verify-email?token=${token}`;
+    const verificationLink = `https://feereceiptmanager.vercel.app/verify-email?token=${token}`;
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
