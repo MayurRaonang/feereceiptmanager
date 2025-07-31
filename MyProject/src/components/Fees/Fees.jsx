@@ -149,6 +149,7 @@ const studentData = location.state?.student || {};
                 value={formData.amountPaid}
                 onChange={handleChange}
                 required
+                onWheel={(e) => e.target.blur()}
               />
             </div>
 

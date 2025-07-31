@@ -273,6 +273,7 @@ export default function Student() {
                 placeholder="Enter total fees amount"
                 type="number"
                 required
+                onWheel={(e) => e.target.blur()}
               />
             </div>
 
