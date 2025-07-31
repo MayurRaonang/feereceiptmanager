@@ -22,6 +22,7 @@
     "multer": "^2.0.1",
     "nodemailer": "^7.0.5",
     "pdfkit": "^0.17.1",
+    "serverless-http": "^3.2.0",
     "stream-buffers": "^3.0.3",
     "y": "^0.3.2"
   }
